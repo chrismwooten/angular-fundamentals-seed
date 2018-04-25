@@ -3,37 +3,37 @@
     {
       "id": 1,
       "fullName": "Christopher",
-      "checkedIn:": false,
-      "checkInDate:": null,
-      "baggage:": ""
+      "checkedIn": true,
+      "checkInDate": 1490742000000,
+      "baggage": ""
     },
     {
       "id": 2,
       "fullName": "Jill",
-      "checkedIn:": true,
-      "checkInDate:": 1490742000000,
-      "baggage:": ""
+      "checkedIn": true,
+      "checkInDate": 1490742000000,
+      "baggage": ""
     },
     {
       "id": 3,
       "fullName": "Bob",
-      "checkedIn:": false,
-      "checkInDate:": null,
-      "baggage:": ""
+      "checkedIn": false,
+      "checkInDate": null,
+      "baggage": ""
     },
     {
       "id": 4,
       "fullName": "James",
-      "checkedIn:": true,
-      "checkInDate:": 1491606000000,
-      "baggage:": ""
+      "checkedIn": true,
+      "checkInDate": 1491606000000,
+      "baggage": ""
     },
     {
       "id": 5,
       "fullName": "Jennifer",
-      "checkedIn:": true,
-      "checkInDate:": 1488412800000,
-      "baggage:": ""
+      "checkedIn": true,
+      "checkInDate": 1488412800000,
+      "baggage": ""
     }
   ]
 }

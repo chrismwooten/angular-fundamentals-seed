@@ -1,0 +1,60 @@
+<form #form="ngForm" (ngSubmit)="handleSubmit(form.value, form.valid)" novalidate>
+  {{ detail | json }}
+  <div>
+    Passenger name:
+    <input
+      type="text"
+      name="fullName"
+      #fullName="ngModel"
+      [ngModel]="detail?.fullName"
+      required>
+      <div *ngIf="fullName.touched && fullName.errors?.required" class="error">
+        Passenger name is required.
+      </div>
+  </div>
+  <div>
+    Passenger ID:
+    <input
+      type="number"
+      name="id"
+      #id="ngModel"
+      [ngModel]="detail?.id"
+      required>
+      <div *ngIf="id.touched && id.errors?.required" class="error">
+        ID is required.
+      </div>
+  </div>
+  <div>
+    <label>
+      <input type="checkbox"
+             name="checkedIn"
+             [ngModel]="detail?.checkedIn"
+             (ngModelChange)="toggleCheckIn($event)">
+      Yes
+    </label>
+  </div>
+
+  <div *ngIf="form.value.checkedIn">
+    Check in date:
+    <input
+      type="number"
+      name="checkInDate"
+      [ngModel]="detail?.checkInDate">
+  </div>
+
+  <div>
+    Luggage:
+    <select
+      name="baggage"
+      [ngModel]="detail?.baggage">
+      <option *ngFor="let item of baggage"
+        [value]="item.key"
+        [selected]="item.key === detail?.baggage">
+        {{item.value}}
+      </option>
+    </select>
+  </div>
+  <button type="submit" [disabled]="form.invalid">
+    Update passenger
+  </button>
+</form>

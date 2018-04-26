@@ -15,15 +15,14 @@
       "baggage": ""
     },
     {
+      "fullName": "Billy Jean",
       "id": 3,
-      "fullName": "Bob",
       "checkedIn": false,
-      "checkInDate": null,
       "baggage": ""
     },
     {
       "id": 4,
-      "fullName": "James",
+      "fullName": "Stephen",
       "checkedIn": true,
       "checkInDate": 1491606000000,
       "baggage": ""
